@@ -1,0 +1,62 @@
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 2;
+    background-color: #eee;
+
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+
+    transition: width .3s ease !important;
+
+    img {
+        width: 40px;
+        aspect-ratio: 1/1;
+        margin: 1ch auto;
+    }
+
+    a {
+        white-space: nowrap;
+        background-color: inherit;
+        padding: 1ch;
+
+        color: #555;
+        text-decoration: none;
+        text-transform: capitalize;
+
+        i {
+            margin-right: 10px;
+            position: relative;
+
+            span {
+                display: none;
+                left: 2.5rem;
+                width: max-content;
+                padding: 1ch;
+                border-radius: 2px;
+                background-color: #eee;
+                font-size: 1rem;
+                position: absolute;
+                z-index: 3;
+
+                box-shadow: 0 0 1px 1px #0008;
+
+            }
+        }
+
+        &:hover {
+            color: #fff;
+            background-color: #14397c;
+
+            i {
+                span {
+                    display: flex;
+                    color: black;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+main {
+    width: 100%;
+    height: 100%;
+}
+
+[date] {
+    width: max-content;
+    margin: 5rem auto;
+    text-align: center;
+    font-size: 56pt;
+    border-top:.5rem solid #000;
+    border-bottom:.5rem solid #000;
+}
+
+div {
+    p {
+        padding-inline-start: 5rem;
+    }
+    h3 {
+        text-align: start;
+        padding-inline-start: 5rem;
+    }
+}

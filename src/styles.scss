@@ -1,1 +1,106 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    //box-shadow: 0 0 1px 1px red;
+
+    font-family: 'open sans';
+    font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'dancing script';
+    font-weight: 600;
+    text-align: center;
+    line-height: 2;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1.8;
+}
+
+h2 {
+    font-size: 3.5rem;
+    @media (max-width: 800px) {
+        font-size: 2rem;
+    }
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+p[text] {
+    line-height: 1.8;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 800px;
+    text-indent: 2rem;
+
+    @media (min-width: 800px) {
+        width: 60%;
+    }
+}
+
+[pic] {
+    margin: 50px;
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 0 #ccc;
+}
+
+[shadow] {
+    box-shadow: 0 0 2px 1px #0008;
+}
+
+[align-children-x] * {
+    display: flex;
+    align-items: center;
+}
+
+[wrapper] {
+    padding: 4rem 4rem 4rem 6rem;
+}
+
+[content] {
+    min-height: 100vh;
+    width: 100%;
+}
+
+[full-width-content-right] {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+[flex] {
+    display: flex;
+
+    * {
+        width: 100%;
+    }
+}
+
+[row] {
+    display: flex;
+    flex-direction: row;
+}
+
+[margin-bottom] {
+    margin-bottom: 40px;
+}
+
+
+[man] {
+    color: #14397c;
+}
+
+[woman] {
+    color: #ac3030;
+}
