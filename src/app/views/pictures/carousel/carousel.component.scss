@@ -1,0 +1,81 @@
+[carousel] {
+    position: relative;
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 14/9;
+    box-shadow: 1px 1px 3px #0005;
+
+    .button, [counter]{
+        display: none;
+    }
+
+    &:hover .button, &:hover [counter]{
+        display: flex;
+    }
+}
+
+[image] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    img {
+       object-fit: contain;
+       width: 100%;
+       height: 100%;
+    }
+}
+
+[previous] {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 80px;
+    background: linear-gradient(to right, #0005, #0000);
+    top: 0;
+    left: 0;
+
+    i.material-icons {
+        font-size: 4rem;
+        cursor: pointer;
+        color: white;
+        text-shadow: 0 3px #0005;
+    }
+
+}
+
+
+[next] {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 80px;
+    background: linear-gradient(to left, #0005, #0000);
+    top: 0;
+    right: 0;
+
+    i.material-icons {
+        font-size: 4rem;
+        cursor: pointer;
+        color: white;
+        text-shadow: 0 3px #0005;
+    }
+    
+}
+
+[counter] {
+    position: absolute;
+    align-self: center;
+    bottom: 1rem;
+    right: 50%;
+    transform: translateX(50%) ;
+    padding: .5ch;
+    background: #000a;
+    color: white;
+    font-weight: bold;
+}

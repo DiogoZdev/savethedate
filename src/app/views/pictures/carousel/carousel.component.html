@@ -1,0 +1,15 @@
+
+<div carousel>
+    <div image>
+        <img [src]="displaySlide">
+    </div>
+    <div class="button" previous (click)="previousImage()">
+        <i class="material-icons">navigate_before</i>
+    </div>
+    <div class="button" next (click)="nextImage()">
+        <i class="material-icons">navigate_next</i>
+    </div>
+    <div counter>
+        {{slideID+1}} de {{slides.length}}
+    </div>
+</div>

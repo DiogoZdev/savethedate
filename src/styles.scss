@@ -1,50 +1,81 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+:root {
+    --blue: #14397c;
+    --red: #ac3030;
+}
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    //box-shadow: 0 0 1px 1px red;
+    position: relative;
 
     font-family: 'open sans';
     font-size: 16px;
 }
 
+router-outlet {
+    min-height: max-content;
+}
+
 h1,h2,h3,h4,h5,h6 {
-    font-family: 'dancing script';
+    font-family: 'parisienne';
     font-weight: 600;
+    text-transform: capitalize;
     text-align: center;
-    line-height: 2;
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.8;
+    @media (min-width: 600px) {
+        font-size: 3.3rem;
+    }
 }
 
 h2 {
-    font-size: 3.5rem;
-    @media (max-width: 800px) {
-        font-size: 2rem;
+    font-size: 2rem;
+    @media (min-width: 600px) {
+        font-size: 2.2rem;
     }
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: 1.8rem;
+    @media (min-width: 600px) {
+        font-size: 2rem;
+    }
+}
+
+h4 {
+    font-size: 2rem;
 }
 
 p[text] {
     line-height: 1.8;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     max-width: 800px;
     text-indent: 2rem;
+    text-align: justify;
+    padding-bottom: 2rem;
 
     @media (min-width: 800px) {
         width: 60%;
     }
+}
+
+a, a:hover, a:visited {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--red);
 }
 
 [pic] {
@@ -53,6 +84,13 @@ p[text] {
     aspect-ratio: 1/1;
     border-radius: 50%;
     box-shadow: -10px 10px 0 0 #ccc;
+}
+
+[her-pic] {
+    background: url(./assets/andressa.jpg);
+    background-size: cover;
+    background-position-x: 00px;
+
 }
 
 [shadow] {
@@ -64,13 +102,24 @@ p[text] {
     align-items: center;
 }
 
-[wrapper] {
-    padding: 4rem 4rem 4rem 6rem;
+main {
+    width: 100%;
+    min-height:100vh;
 }
 
-[content] {
-    min-height: 100vh;
+.container {
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
     width: 100%;
+    min-height: calc(100vh - 130px);
+    max-width: 960px;
+    padding: 2rem 2rem 2rem 4rem;
+
+    h1,h2,h3,h4,h5 {
+        line-height: 2;
+    }
+
 }
 
 [full-width-content-right] {
@@ -97,10 +146,25 @@ p[text] {
 }
 
 
-[man] {
-    color: #14397c;
+[blue] {
+    color: var(--blue);
 }
 
-[woman] {
-    color: #ac3030;
+[red] {
+    color: var(--red);
+}
+
+// Colors and stuff
+
+
+
+[card] {
+    position: relative;
+
+    width: 80%;
+    padding: 2rem;
+    margin: 2rem auto;
+
+    background-color: white;
+    border-radius: 5px;
 }

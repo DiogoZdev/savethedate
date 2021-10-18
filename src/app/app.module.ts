@@ -13,6 +13,7 @@ import { MapsComponent } from './views/maps/maps.component';
 import { DonateComponent } from './views/donate/donate.component';
 import { SettingsComponent } from './views/settings/settings.component';
 import { PicturesComponent } from './views/pictures/pictures.component';
+import { CarouselComponent } from './views/pictures/carousel/carousel.component';
 
 
 @NgModule({
@@ -28,10 +29,11 @@ import { PicturesComponent } from './views/pictures/pictures.component';
     DonateComponent,
     SettingsComponent,
     PicturesComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
