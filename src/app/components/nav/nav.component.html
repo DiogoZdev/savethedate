@@ -1,6 +1,7 @@
 <nav shadow>
-        <div menu_icon (click)="toggleMenu()" shadow2 class="material-icons">
-            menu
+        <div menu_icon (click)="toggleMenu()" shadow2>
+           <div class="material-icons" *ngIf="!showMenu">menu</div>
+           <div class="material-icons" *ngIf="showMenu">close</div>
         </div>
 
         <div menu_mobile *ngIf=showMenu>
